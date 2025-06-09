@@ -1,0 +1,45 @@
+@use "variables" as vars;
+@use "mixins" as mix;
+
+.btn {
+  @include mix.btn-base;
+
+  // Variants
+  &--primary {
+    @include mix.btn-variant(vars.$color-primary, vars.$color-primary-hover);
+  }
+
+  &--secondary {
+    @include mix.btn-variant(vars.$color-secondary, vars.$color-secondary-hover);
+  }
+
+  &--success {
+    @include mix.btn-variant(vars.$color-success, vars.$color-success-hover);
+  }
+
+  &--danger {
+    @include mix.btn-variant(vars.$color-danger, vars.$color-danger-hover);
+  }
+
+  &--outline {
+    @include mix.btn-outline(vars.$color-primary);
+  }
+
+  // Sizes
+  &--small {
+    @include mix.btn-size(vars.$padding-sm, vars.$font-size-sm);
+  }
+
+  &--medium {
+    @include mix.btn-size(vars.$padding-md, vars.$font-size-md);
+  }
+
+  &--large {
+    @include mix.btn-size(vars.$padding-lg, vars.$font-size-lg);
+  }
+
+  // Width modifier
+  &--full-width {
+    @include mix.btn-full-width;
+  }
+} 

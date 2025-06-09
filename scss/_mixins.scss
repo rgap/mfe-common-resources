@@ -1,0 +1,53 @@
+@use "variables" as vars;
+
+// Base button styles
+@mixin btn-base {
+  display: inline-block;
+  font-weight: vars.$font-weight-button;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: vars.$border-width solid transparent;
+  border-radius: vars.$border-radius;
+  transition: vars.$transition-base;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: vars.$opacity-disabled;
+  }
+}
+
+// Button variants
+@mixin btn-variant($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: white;
+  border: none;
+
+  &:hover:not(:disabled) {
+    background-color: $hover-color;
+  }
+}
+
+@mixin btn-outline($color) {
+  background-color: transparent;
+  color: $color;
+  border: vars.$border-width solid $color;
+
+  &:hover:not(:disabled) {
+    background-color: $color;
+    color: white;
+  }
+}
+
+// Button sizes
+@mixin btn-size($padding, $font-size) {
+  padding: $padding;
+  font-size: $font-size;
+}
+
+// Full width modifier
+@mixin btn-full-width {
+  width: 100%;
+  display: block;
+} 

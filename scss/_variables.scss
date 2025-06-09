@@ -1,0 +1,31 @@
+// Colors
+$color-primary: #007bff !default;
+$color-secondary: #6c757d !default;
+$color-success: #28a745 !default;
+$color-danger: #dc3545 !default;
+
+$color-primary-hover: #0056b3 !default;
+$color-secondary-hover: #545b62 !default;
+$color-success-hover: #218838 !default;
+$color-danger-hover: #c82333 !default;
+
+// Typography
+$font-size-sm: 0.875rem !default;
+$font-size-md: 1rem !default;
+$font-size-lg: 1.25rem !default;
+$font-weight-button: 500 !default;
+
+// Spacing
+$padding-sm: 0.25rem 0.5rem !default;
+$padding-md: 0.5rem 1rem !default;
+$padding-lg: 0.75rem 1.5rem !default;
+
+// Borders
+$border-radius: 0.25rem !default;
+$border-width: 1px !default;
+
+// Transitions
+$transition-base: all 0.15s ease-in-out !default;
+
+// States
+$opacity-disabled: 0.65 !default; 

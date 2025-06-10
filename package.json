@@ -1,5 +1,5 @@
 {
-  "name": "common-resources",
+  "name": "mfe-common-resources",
   "version": "1.0.0",
   "description": "Common styling resources for the microfrontend components",
   "files": [

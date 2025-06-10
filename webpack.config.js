@@ -1,33 +1,32 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './preview/index.js',
+  entry: "./preview/index.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    clean: true
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
-  mode: 'development',
+  mode: "development",
   module: {
     rules: [
       {
         test: /\.scss$/,
         use: [
-          'style-loader',    // Injects styles into DOM
-          'css-loader',      // Turns CSS into JS
-          'sass-loader'      // Compiles SCSS to CSS
+          "style-loader", // Injects styles into DOM
+          "css-loader", // Turns CSS into JS
+          "sass-loader", // Compiles SCSS to CSS
         ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './preview/index.html'
+      template: "./preview/index.html",
     }),
   ],
   devServer: {
-    static: './dist',
-    open: true
-  }
+    static: "./dist",
+  },
 };

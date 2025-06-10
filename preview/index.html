@@ -1,9 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Common Resources Preview</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Resources Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .button-grid {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-  <button class="btn btn--primary btn--medium">Test Button</button>
+    <h1>Common Resources Style Preview</h1>
+    
+    <div class="section">
+        <h2>Button Variants</h2>
+        <div class="button-grid">
+            <button class="btn">Default</button>
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--secondary">Secondary</button>
+            <button class="btn btn--success">Success</button>
+            <button class="btn btn--danger">Danger</button>
+            <button class="btn btn--outline">Outline</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Button Sizes</h2>
+        <div class="button-grid">
+            <button class="btn btn--primary btn--small">Small</button>
+            <button class="btn btn--primary btn--medium">Medium</button>
+            <button class="btn btn--primary btn--large">Large</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Button States</h2>
+        <div class="button-grid">
+            <button class="btn btn--primary">Normal</button>
+            <button class="btn btn--primary" disabled>Disabled</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Full Width Button</h2>
+        <button class="btn btn--primary btn--full-width">Full Width Button</button>
+    </div>
 </body>
 </html>
